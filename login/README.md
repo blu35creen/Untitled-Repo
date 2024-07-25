@@ -18,6 +18,12 @@ The application launches with two sample user accounts defined in the java becke
 
 - Password: abcdefg
 
+**林嘉颖**
+
+- Username: 林
+
+- Password: jiayinglim
+
 ### Disabled CSRF
 
 - The CSRF protection is currently disabled from `config/SecurityConfig.java` to ensure the logout function works for demonstration purposes.

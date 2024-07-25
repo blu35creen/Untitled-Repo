@@ -35,8 +35,16 @@ public class DataLoader implements CommandLineRunner {
         user2.setName("Manager");
         user2.setRole("MANAGER");
 
+        // Any resemblance to real or fictional persons is entirely coincidental
+        User user3 = new User();
+        user3.setUsername("林");
+        user3.setPassword(passwordEncoder.encode("jiayinglim"));
+        user3.setName("林嘉颖");
+        user3.setRole("USER");
+
         userRepository.save(user1);
         userRepository.save(user2);
+        userRepository.save(user3);
 
     }
 }
