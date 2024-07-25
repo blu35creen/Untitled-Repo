@@ -7,12 +7,16 @@
 The application launches with two sample user accounts defined in the java beckend under `DataLoader.java`:
 
 **User One**
-Username: user1
-Password: password1
+
+- Username: user1
+
+- Password: password1
 
 **Manager**
-Username: manager
-Password: abcdefg
+
+- Username: manager
+
+- Password: abcdefg
 
 ### Disabled CSRF
 
