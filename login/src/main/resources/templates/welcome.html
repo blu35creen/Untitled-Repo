@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h2>Welcome</h2>
+    <p th:text="'Name: ' + ${#authentication.principal.name}"></p>
+    <p th:text="'Username: ' + ${#authentication.principal.username}"></p>
+    <p
+      th:text="'Role: ' + ${#authentication.principal.authorities[0].authority}"
+    ></p>
+    <div
+      th:if="${#authentication.principal.authorities[0].authority == 'ROLE_MANAGER'}"
+    >
+      <a th:href="@{/restricted}">Go to Restricted Page</a>
+    </div>
+
+    <form id="logoutForm" action="/logout" method="post">
+      <input
+        type="hidden"
+        name="${_csrf.parameterName}"
+        value="${_csrf.token}"
+      />
+      <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>
