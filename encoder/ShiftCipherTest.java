@@ -50,7 +50,7 @@ public class ShiftCipherTest {
         String test4 = "FC/GGJ RJMG.";
         String answer4 = "HELLO WORLD";
         String result4 = cipher2.decode(test4);
-        System.out.printf("\nTest Case 3 (Decoding): %s\n", answer4.equals(result4) ? "PASS" : "FAIL");
+        System.out.printf("\nTest Case 4 (Decoding): %s\n", answer4.equals(result4) ? "PASS" : "FAIL");
         System.out.printf("Expected Result: %s\n", answer3);
         System.out.printf("Actual Result  : %s\n", result3);
 
